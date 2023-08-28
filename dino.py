@@ -1,13 +1,4 @@
 import cv2
-import math
-from cvzone.HandTrackingModule import HandDetector
-import pyautogui as auto
-
-hand = HandDetector(detectionCon=0.8, maxHands=2)
-
-cap = cv2.VideoCapture(0)
-
-import cv2
 import cvzone
 from cvzone.HandTrackingModule import HandDetector
 import pyautogui as auto

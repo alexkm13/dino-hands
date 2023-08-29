@@ -3,13 +3,11 @@ from cvzone.HandTrackingModule import HandDetector
 import pyautogui as auto
 import time
 
-detector=HandDetector(detectionCon=0.8, maxHands=1)
+detector = HandDetector(detectionCon=0.8, maxHands=1)
 
 time.sleep(2.0)
 
-current_key_pressed = set()
-
-video=cv2.VideoCapture(0)
+video = cv2.VideoCapture(0)
 
 while True:
     ret, frame = video.read()
